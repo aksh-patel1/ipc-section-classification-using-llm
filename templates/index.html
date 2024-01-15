@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Text Extraction</title>
+</head>
+<body>
+    <h1>PDF Text Extraction</h1>
+    <form method="POST" enctype="multipart/form-data" action="{{ url_for('upload_file') }}">
+        <label for="file">Choose a PDF file:</label>
+        <input type="file" name="file" accept=".pdf" required>
+        <br>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
